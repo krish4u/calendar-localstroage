@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Calendar with Local Storage</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <i>Click on any date to add notes</i>
+<div class="cal">
+  <table class="table-bordered">
+    <tr ><td class="month"> <a href="#" id="prev">&laquo;</a></td><td class="month" colspan=5 id="month">
+      <span class="month__display"></span><span class="year__display"></span>
+        <div class="month__selector">
+          
+          <ul>
+            <li id="jan" data-month=1>Jan</li>
+            <li id="feb" data-month=2>Feb</li>
+            <li id="mar" data-month=3>Mar</li>
+            <li id="apr" data-month=4>Apr</li>
+            <li id="may" data-month=5>May</li>
+            <li id="jun" data-month=6>Jun</li>
+            <li id="jul" data-month=7>Jul</li>
+            <li id="aug" data-month=8>Aug</li>
+            <li id="sep" data-month=9>Sep</li>
+            <li id="oct" data-month=10>Oct</li>
+            <li id="nov" data-month=11>Nov</li>
+            <li id="dec" data-month=12>Dec</li>
+          </ul>
+        </div>
+      <td class="month"> <a href="#" id="next">&raquo;</a></td>
+        </td>
+    </tr>
+    <tr class="weekdays"><td>Mon</td><td>Tue</td><td>Wed</td><td>Thu</td><td>Fri</td><td>Sat</td><td>Sun</td></tr>
+   
+    
+  </table>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

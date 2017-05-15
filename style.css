@@ -1,0 +1,243 @@
+
+body{
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-left: calc((100vw - 50vw) - 250px);
+  overflow: hidden;
+}
+
+table{
+    border-collapse: collapse;
+    box-shadow: 1px 0px 19px #383030;
+    width: 500px;
+    margin-top: 15vh;
+}
+
+td{
+    border :0 !important;
+    padding: 1em;
+    text-align: center;
+    
+  
+}
+
+.weekdays{
+    background: seagreen;
+    color: #fff;
+}
+
+td{
+    background: beige;
+}
+
+td span{
+  border-radius: 50%;
+  background: #c7e5ff;
+  display: block;
+  height: 2em;
+  width: 2em;
+  line-height: 2;
+  color: #fff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abcff+0,60abf8+44,4096ee+100;Blue+3D+%2314 */
+background: #7abcff; /* Old browsers */
+background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+}
+
+.month{
+  background: indianred;
+  color: white;
+  padding: .8em;
+  position: relative;
+}
+
+.month__display{
+  width: 100%;
+}
+
+.month__selector{
+  width: 250px;
+    height: 250px;
+    background: #da8f8f;
+    position: absolute;
+    border-radius: 50%;
+    top: -102%;
+    left: 13%;
+    transition: all ease .8s;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.month__selector ul{
+  margin:0;
+  padding:0;
+}
+
+.month__selector li{
+ list-style: none;
+    width: 35px;
+    height: 35px;
+    padding: .4em;
+    box-sizing: border-box;
+    background: #f7f2f2;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: .9em;
+    color: #736262;
+}
+
+.year__display {
+    display: inline;
+    background: none;
+    margin-left: 10px;
+}
+
+
+#jan{
+  transform:translate(100px, 10px)
+}
+
+#feb{
+  transform: translate(149px, 25px)
+}
+
+#mar{transform: translate(190px, 55px)}
+
+#apr{transform: translate(207px, 101px)}
+
+#may{transform:translate(201px, 148px)}
+
+#jun{transform:translate(172px, 183px)}
+
+#jul{transform:translate(126px, 206px)}
+
+#aug{transform: translate(75px, 200px)}
+
+#sep{transform: translate(32px, 172px)}
+
+#oct{transform: translate(13px, 123px)}
+
+#nov{transform: translate(14px, 71px)}
+
+#dec{transform: translate(47px, 28px)}
+
+
+
+
+.weekdays td{
+  background: black;
+}
+
+.today{
+   background: orange; 
+   color: #fff;
+  font-weight: 700;
+}
+
+.show {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
+}
+
+.month__display {
+    display: inline;
+    background: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#prev, #next{
+  background: skyblue;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  display: block;
+  font-size: 1.2em;
+  line-height: 1.2;
+  padding: .25em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Styles for task popup */
+.task {
+    width: 250px;
+    position: absolute;
+    z-index: 1;
+    padding: .5em;
+    background: #25394a;
+}
+
+.task input[type="button"] {
+    display: block;
+    text-decoration: none;
+    background: aliceblue;
+    width: 80px;
+    border: 0;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #8a6d3b;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: .8em;
+    padding: .3em;
+}
+
+.task input[type='text'] {
+font-size: .8em;
+    border: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+    width: 100%;
+}
+
+.days {
+    position: relative;
+}
+
+
+.task-present{
+  border: 2px solid indianred;
+    box-shadow: 0px 0px 5px #cd5c5c;
+    line-height: 1.8;
+}
+
+td span .task-content {
+    position: absolute;
+    background: #FF9800;
+    display: block;
+    padding: .5em;
+    top: 23px;
+    left: 15px;
+    width: 149px;
+    height: auto;
+    line-height: 1.2;
+    font-size: .8em;
+    border-radius: 4px;
+    z-index: 1;
+    opacity: 0;
+  transition: all ease .8s;
+}
+
+td span:hover .task-content{
+  opacity: 1;
+}
+
+span.task-close {
+    float: right;
+    background: white;
+    border-radius: 50%;
+    width: 17px;
+    height: 18px;
+    color: #25394a;
+    text-align: center;
+    line-height: 1;
+}
